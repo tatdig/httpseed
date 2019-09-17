@@ -48,7 +48,7 @@ java -Xmx300m
      --dir=/path/to/a/working/directory
      --net={test,main}
      --http-port=8080
-     --dns-hostname={main,test}.seed.example.com
+     --dnsname={main,test}.seed.example.com
      --dns-port=2053
      --hostname=example.com
      --log-to-console
