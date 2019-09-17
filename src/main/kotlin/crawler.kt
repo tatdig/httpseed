@@ -1,11 +1,11 @@
 package net.plan99.bitcoin.cartographer
 
-import org.bitcoinj.params.*
-import org.bitcoinj.core.*
-import org.bitcoinj.core.listeners.PreMessageReceivedEventListener
-import org.bitcoinj.kits.WalletAppKit
-import org.bitcoinj.net.NioClientManager
-import org.bitcoinj.utils.Threading
+import org.tdcoinj.params.*
+import org.tdcoinj.core.*
+import org.tdcoinj.core.listeners.PreMessageReceivedEventListener
+import org.tdcoinj.kits.WalletAppKit
+import org.tdcoinj.net.NioClientManager
+import org.tdcoinj.utils.Threading
 import org.mapdb.DBMaker
 import org.slf4j.Logger
 import org.slf4j.LoggerFactory
@@ -207,7 +207,7 @@ class Crawler(private val console: Console, private val workingDir: Path, public
 
     fun attemptConnect(addr: InetSocketAddress) {
         connecting.add(addr)
-        val peer = Peer(params, verMsg, null, PeerAddress(addr))
+        val peer = Peer(params, verMsg, null, PeerAddress(params, addr))
         peer.versionHandshakeFuture later { peer ->
             onConnect(addr, peer)
         }

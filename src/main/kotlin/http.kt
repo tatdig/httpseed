@@ -10,10 +10,10 @@ import java.nio.charset.StandardCharsets;
 import java.io.ByteArrayOutputStream
 import org.threeten.bp.Instant
 import java.util.zip.GZIPOutputStream
-import org.bitcoinj.core.*
+import org.tdcoinj.core.*
 import org.slf4j.LoggerFactory
-import org.bitcoin.crawler.PeerSeedProtos
-import org.bitcoinj.utils.Threading
+import org.tdcoin.crawler.PeerSeedProtos
+import org.tdcoinj.utils.Threading
 
 class HttpSeed(address: InetAddress?, port: Int, baseUrlPath: String, privkeyPath: Path, private val crawler: Crawler, private val netName: String) {
     private val log = LoggerFactory.getLogger("cartographer.http")

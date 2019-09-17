@@ -3,7 +3,7 @@ package net.plan99.bitcoin.cartographer
 import com.google.common.collect.Multisets
 import com.google.common.collect.HashMultiset
 import com.google.common.util.concurrent.RateLimiter
-import org.bitcoinj.core.VersionMessage
+import org.tdcoinj.core.VersionMessage
 import java.util.ArrayList
 import javax.management.MXBean
 

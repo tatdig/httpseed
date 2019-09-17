@@ -1,7 +1,7 @@
 package net.plan99.bitcoin.cartographer
 
 import com.google.common.util.concurrent.*
-import org.bitcoinj.utils.Threading
+import org.tdcoinj.utils.Threading
 import com.google.protobuf.ByteString
 import java.util.ArrayList
 import java.net.InetSocketAddress
@@ -11,7 +11,7 @@ import org.threeten.bp.temporal.TemporalAmount
 
 fun parseIPAndPort(ipAndPort: String): InetSocketAddress {
     val hostAndPort = HostAndPort.fromString(ipAndPort.trim())
-    val sockaddr = InetSocketAddress(hostAndPort.hostText, hostAndPort.port)
+    val sockaddr = InetSocketAddress(hostAndPort.getHost(), hostAndPort.getPort())
     return sockaddr
 }
 

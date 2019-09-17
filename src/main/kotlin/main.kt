@@ -3,8 +3,8 @@ package net.plan99.bitcoin.cartographer
 import java.net.InetAddress
 import java.nio.file.*
 import java.util.logging.*
-import org.bitcoinj.utils.BriefLogFormatter
-import org.bitcoinj.core.NetworkParameters
+import org.tdcoinj.utils.BriefLogFormatter
+import org.tdcoinj.core.NetworkParameters
 import java.lang.management.ManagementFactory
 import javax.management.ObjectName
 import joptsimple.OptionParser
@@ -78,7 +78,7 @@ public class BitcoinHTTPSeed {
             }
             loggerPin = logger
 
-            Logger.getLogger("org.bitcoinj").level = Level.SEVERE
+            Logger.getLogger("org.tdcoinj").level = Level.SEVERE
         }
     }
 }
