@@ -3,7 +3,7 @@ Bitcoin Cartographer
 
 Cartographer is a Bitcoin peer to peer network crawler and seed server.
 
-*[Download Cartographer](https://github.com/mikehearn/httpseed/releases)*
+*[Download Cartographer](https://github.com/tatadig/httpseed/releases)*
 
 Like all peer to peer networks, Bitcoin requires hard coded starting points (sometimes called directories) that can be used to
 find some initial peers to connect to. Currently Bitcoin nodes and wallets use DNS lookups for this purpose. DNS is
@@ -40,7 +40,7 @@ large number of features it comes to only about 670 lines of code.
 Usage
 =====
 
-You will need a Java 7 runtime. Then [grab the JAR](https://github.com/mikehearn/httpseed/releases/) and use it like this:
+You will need a Java 7 runtime. Then [grab the JAR](https://github.com/tatadig/httpseed/releases/) and use it like this:
 
 ```
 java -Xmx300m
